@@ -1,6 +1,5 @@
 *, *::before, *::after{
     box-sizing: border-box;
-
 }
 
 body{
@@ -10,11 +9,17 @@ body{
     background-size: cover;
     font-weight: normal;
 }
+.bigcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     display: grid;
     justify-content: center ;
     align-content: center;
     min-height: 90vh;
+    min-width: fit-content;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     font-family: 'Concert One', cursive;
@@ -54,9 +59,13 @@ button{
 }
 
 button:hover{
-    transform: scale(0.95);
-    background-color: #08837F;
+    transform: scale(0.95) translateY(-3px);
+    background-color: rgba(216, 0, 223, 0.3);
     color: azure;
+    -webkit-transform: scale(0.95) translateY(-3px);
+    -moz-transform: scale(0.95) translateY(-3px);
+    -ms-transform: scale(0.95) translateY(-3px);
+    -o-transform: scale(0.95) translateY(-3px);
 }
 .span2{
     grid-column: span 2;
