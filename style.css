@@ -6,8 +6,18 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(33deg, #FF0E88, #000C6F);
-    background-size: cover;
     font-weight: normal;
+}
+footer{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Courgette', cursive;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: azure;
+}
+a{
+    color: azure;
 }
 .bigcontainer{
     display: flex;
